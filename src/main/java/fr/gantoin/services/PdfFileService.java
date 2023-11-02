@@ -1,27 +1,28 @@
 package fr.gantoin.services;
 
-import fr.gantoin.data.model.SamplePerson;
-import fr.gantoin.data.repositories.SamplePersonRepository;
-import java.util.Optional;
+import fr.gantoin.data.model.PdfFile;
+import fr.gantoin.data.repositories.PdfFileRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
-public class SamplePersonService {
+public class PdfFileService {
 
-    private final SamplePersonRepository repository;
+    private final PdfFileRepository repository;
 
-    public SamplePersonService(SamplePersonRepository repository) {
+    public PdfFileService(PdfFileRepository repository) {
         this.repository = repository;
     }
 
-    public Optional<SamplePerson> get(Long id) {
+    public Optional<PdfFile> get(Long id) {
         return repository.findById(id);
     }
 
-    public SamplePerson update(SamplePerson entity) {
+    public PdfFile update(PdfFile entity) {
         return repository.save(entity);
     }
 
@@ -29,11 +30,11 @@ public class SamplePersonService {
         repository.deleteById(id);
     }
 
-    public Page<SamplePerson> list(Pageable pageable) {
+    public Page<PdfFile> list(Pageable pageable) {
         return repository.findAll(pageable);
     }
 
-    public Page<SamplePerson> list(Pageable pageable, Specification<SamplePerson> filter) {
+    public Page<PdfFile> list(Pageable pageable, Specification<PdfFile> filter) {
         return repository.findAll(filter, pageable);
     }
 
