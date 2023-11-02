@@ -1,4 +1,4 @@
-package fr.gantoin.data;
+package fr.gantoin.data.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;

@@ -2,7 +2,7 @@ package fr.gantoin;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.theme.Theme;
-import fr.gantoin.data.SamplePersonRepository;
+import fr.gantoin.data.repositories.SamplePersonRepository;
 import javax.sql.DataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,8 @@
 package fr.gantoin.security;
 
 import com.vaadin.flow.spring.security.AuthenticationContext;
-import fr.gantoin.data.User;
-import fr.gantoin.data.UserRepository;
+import fr.gantoin.data.model.User;
+import fr.gantoin.data.repositories.UserRepository;
 import java.util.Optional;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;

@@ -1,7 +1,7 @@
 package fr.gantoin.security;
 
-import fr.gantoin.data.User;
-import fr.gantoin.data.UserRepository;
+import fr.gantoin.data.model.User;
+import fr.gantoin.data.repositories.UserRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.security.core.GrantedAuthority;

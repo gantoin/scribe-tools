@@ -1,4 +1,4 @@
-package fr.gantoin.data;
+package fr.gantoin.data.model;
 
 import jakarta.persistence.Entity;
 import jakarta.validation.constraints.Email;

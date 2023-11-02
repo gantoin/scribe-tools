@@ -1,4 +1,4 @@
-package fr.gantoin.data;
+package fr.gantoin.data.model;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -33,10 +33,7 @@ public abstract class AbstractEntity {
 
     @Override
     public int hashCode() {
-        if (getId() != null) {
-            return getId().hashCode();
-        }
-        return super.hashCode();
+        return getId().hashCode();
     }
 
     @Override
@@ -44,9 +41,6 @@ public abstract class AbstractEntity {
         if (!(obj instanceof AbstractEntity that)) {
             return false; // null or not an AbstractEntity class
         }
-        if (getId() != null) {
-            return getId().equals(that.getId());
-        }
-        return super.equals(that);
+        return getId().equals(that.getId());
     }
 }

@@ -22,7 +22,7 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.spring.data.VaadinSpringDataHelpers;
 import com.vaadin.flow.theme.lumo.LumoUtility;
-import fr.gantoin.data.SamplePerson;
+import fr.gantoin.data.model.SamplePerson;
 import fr.gantoin.services.SamplePersonService;
 import fr.gantoin.views.MainLayout;
 import jakarta.annotation.security.PermitAll;

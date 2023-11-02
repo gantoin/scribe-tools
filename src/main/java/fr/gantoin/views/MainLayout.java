@@ -19,7 +19,7 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.server.StreamResource;
 import com.vaadin.flow.server.auth.AccessAnnotationChecker;
 import com.vaadin.flow.theme.lumo.LumoUtility;
-import fr.gantoin.data.User;
+import fr.gantoin.data.model.User;
 import fr.gantoin.security.AuthenticatedUser;
 import fr.gantoin.views.dashboard.DashboardView;
 import fr.gantoin.views.edit.EditView;

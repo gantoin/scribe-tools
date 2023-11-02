@@ -1,6 +1,7 @@
-package fr.gantoin.data;
+package fr.gantoin.data.repositories;
 
 
+import fr.gantoin.data.model.SamplePerson;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

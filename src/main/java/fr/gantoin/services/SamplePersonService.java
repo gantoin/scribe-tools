@@ -1,7 +1,7 @@
 package fr.gantoin.services;
 
-import fr.gantoin.data.SamplePerson;
-import fr.gantoin.data.SamplePersonRepository;
+import fr.gantoin.data.model.SamplePerson;
+import fr.gantoin.data.repositories.SamplePersonRepository;
 import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
